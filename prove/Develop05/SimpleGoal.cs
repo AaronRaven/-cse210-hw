@@ -12,7 +12,6 @@ public class SimpleGoal : Goal
     {
         if (_isComplete)
         {
-            // If it is already completed get 0 points.
             return 0;
         }
         else
@@ -21,10 +20,8 @@ public class SimpleGoal : Goal
             return _basePoints;
         }
     }
-
     public override bool IsComplete()
     {
-        // Return completion state.
         return _isComplete;
     }
 
@@ -37,13 +34,10 @@ public class SimpleGoal : Goal
         }
         return $"[{checkmark}] {_name} ({_description})";
     }
-
     public override string Serialize()
     {
         return $"SimpleGoal~:~{_name}~|~{_description}~|~{_basePoints}~|~{_isComplete}";
     }
-
-    // Used when loading goals from a file.
     public void SetIsComplete(bool isComplete)
     {
         _isComplete = isComplete;

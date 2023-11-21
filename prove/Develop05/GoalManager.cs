@@ -41,7 +41,6 @@ public class GoalManager
 
         else if (choice == 3)
         {
-            // Get unique attributs for the checklist goal
             Console.Write("How many times does this goal need to be accomplished for a bonus? ");
             int timesRequired = int.Parse(Console.ReadLine());
             Console.Write("What is the bonus for accomplishing it that many time? ");
@@ -52,7 +51,6 @@ public class GoalManager
             _goals.Add(checklistGoal);
         }
     }
-
     public void ListGoals()
     {
         Console.WriteLine("\nThe goals are:");
@@ -63,7 +61,6 @@ public class GoalManager
             lineNumber++;
         }
     }
-
     public void SaveGoals()
     {
         Console.Write("What is the filename for the goal file? ");
@@ -78,7 +75,6 @@ public class GoalManager
             }
         }
     }
-
     public void LoadGoals()
     {
         Console.Write("What is the filename for the goal file? ");
@@ -95,7 +91,6 @@ public class GoalManager
             AddGoal(type, details);
         }
     }
-
     public void RecordEvent()
     {
         Console.WriteLine("\nThe goals are:");
@@ -133,8 +128,6 @@ public class GoalManager
         _level.Display(_pointTotal);
     }
 
-    // This method deserializes goal details, creates a new goal and adds it to _goals list.
-    // It is used by LoadGoals() method.
     private void AddGoal(string type, string details)
     {
         string[] parts = details.Split("~|~");
