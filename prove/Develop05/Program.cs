@@ -10,7 +10,6 @@ class Program
         while (choice != 6)
         {
             goalManager.DisplayInfo();
-
             Console.WriteLine("Menu Options:\n" +
                               "  1. Create New Goal\n" +
                               "  2. List Goals\n" +
