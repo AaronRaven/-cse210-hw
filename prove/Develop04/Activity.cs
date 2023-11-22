@@ -33,9 +33,7 @@ public class Activity
         Console.WriteLine("Get ready...");
         _animation.Display(5);
         
-        // Keep track of activations.
         _activationCount[_name]++;
-        // Keep track of total duration.
         _totalDuration[_name] += _duration;
     }
 
