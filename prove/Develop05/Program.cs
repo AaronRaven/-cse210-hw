@@ -5,11 +5,11 @@ class Program
     static void Main(string[] args)
     {
         GoalManager goalManager = new GoalManager();
-
         int choice = 0;
         while (choice != 6)
         {
             goalManager.DisplayInfo();
+
             Console.WriteLine("Menu Options:\n" +
                               "  1. Create New Goal\n" +
                               "  2. List Goals\n" +
@@ -24,7 +24,6 @@ class Program
             {
                 goalManager.CreateGoal();
             }
-
             else if (choice == 2)
             {
                 goalManager.ListGoals();
