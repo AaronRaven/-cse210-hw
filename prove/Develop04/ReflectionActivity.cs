@@ -23,7 +23,6 @@ public class ReflectionActivity : Activity
             "as they related to this experience");
         Console.Write("You may begin in: ");
         _countdown.Display(5);
-        Console.Clear();
     
         DateTime startTime = DateTime.Now;
         DateTime endTime = startTime.AddSeconds(_duration);

@@ -7,7 +7,7 @@ class Program
         int choice = 0;
         while(choice != 4)
         {
-            Console.Clear();
+
             Console.WriteLine("Welcome to the self-care app!");
             Console.WriteLine("Please choose an activity:");
             Console.WriteLine("1. Breathing exercise");
@@ -21,7 +21,6 @@ class Program
 
             if (choice == 1)
             {
-                Console.Clear();
                 BreathingActivity breathingActivity = new BreathingActivity();
                 breathingActivity.RunStartingSequence();
                 breathingActivity.RunActivity();
@@ -29,7 +28,6 @@ class Program
             }
             else if (choice == 2)
             {
-                Console.Clear();
                 ReflectionActivity reflectionActivity = new ReflectionActivity();
                 reflectionActivity.RunStartingSequence();
                 reflectionActivity.RunActivity();
@@ -37,7 +35,6 @@ class Program
             }
             else if (choice == 3)
             {
-                Console.Clear();
                 ListingActivity listingActivity = new ListingActivity();
                 listingActivity.RunStartingSequence();
                 listingActivity.RunActivity();
